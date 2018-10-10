@@ -1,0 +1,7 @@
+<mat-card>
+  <mat-form-field><input matInput placeholder="pitanje" #p></mat-form-field>
+  <br>
+  <mat-form-field><input matInput placeholder="odgovor" #o></mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" (click)="createQuizItem(p.value, o.value)">Dodaj</button>
+</mat-card>
