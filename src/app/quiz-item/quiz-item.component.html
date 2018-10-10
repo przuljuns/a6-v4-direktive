@@ -1,5 +1,8 @@
 <mat-card>
-  <mat-card-title><h3>{{seqNumber}}. {{ quizItemData.question }}</h3></mat-card-title>
+  <mat-card-title><h3 [ngClass]="{
+                        'hidden': quizItemData.hideAnswer,
+                        'shown': !quizItemData.hideAnswer
+                      }">{{seqNumber}}. {{ quizItemData.question }}</h3></mat-card-title>
   <mat-card-content>
     <p [hidden]="quizItemData.hideAnswer">{{ quizItemData.answer }}</p>
   </mat-card-content>
