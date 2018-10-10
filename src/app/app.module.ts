@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { QuizItemComponent } from './quiz-item/quiz-item.component';
 import { QuizListComponent } from './quiz-list/quiz-list.component';
 import { QuizItemFormComponent } from './quiz-item-form/quiz-item-form.component';
+import { ShadowDirective } from './directives/shadow.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuizItemComponent,
     QuizListComponent,
-    QuizItemFormComponent
+    QuizItemFormComponent,
+    ShadowDirective
   ],
   imports: [
     BrowserModule,
