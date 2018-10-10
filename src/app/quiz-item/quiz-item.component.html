@@ -4,7 +4,7 @@
                         'shown': !quizItemData.hideAnswer
                       }">{{seqNumber}}. {{ quizItemData.question }}</h3></mat-card-title>
   <mat-card-content>
-    <p [hidden]="quizItemData.hideAnswer">{{ quizItemData.answer }}</p>
+    <p [hidden]="quizItemData.hideAnswer" appShadow>{{ quizItemData.answer }}</p>
   </mat-card-content>
   <!-- <button mat-raised-button color="primary" (click)="quizItemData.hideAnswer=!quizItemData.hideAnswer">Promeni prikaz</button> -->
   <p *ngIf="quizItemData.hideAnswer">Kliknite na dugme da biste videli odgovor.</p> 
