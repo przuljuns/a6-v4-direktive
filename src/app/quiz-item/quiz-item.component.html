@@ -4,5 +4,6 @@
     <p [hidden]="quizItemData.hideAnswer">{{ quizItemData.answer }}</p>
   </mat-card-content>
   <!-- <button mat-raised-button color="primary" (click)="quizItemData.hideAnswer=!quizItemData.hideAnswer">Promeni prikaz</button> -->
+  <p *ngIf="quizItemData.hideAnswer">Kliknite na dugme da biste videli odgovor.</p> 
   <button mat-raised-button color="primary" (click)="toggleHideAnswer()">{{ buttonTitle }}</button>
 </mat-card>
