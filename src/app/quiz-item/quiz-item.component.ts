@@ -10,6 +10,7 @@ export class QuizItemComponent implements OnInit {
 
   @Input() quizItemData: QuizItem;
   buttonTitle = 'Prikaži';
+  @Input() seqNumber: number;
 
   constructor() { }
 
